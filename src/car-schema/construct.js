@@ -30,16 +30,24 @@ function getCarConstants(){
 
 function generateSchema(values){
   return {
+    //DW added gene
+    wheel_count: {
+      type: "float",
+      length: 1,
+      min: values.wheelMinCount,
+      range: values.wheelCountRange,
+      factor: 1,
+    },
     wheel_radius: {
       type: "float",
-      length: values.wheelCount,
+      length: values.wheelMinCount + values.wheelCountRange, //DW wheel stuff
       min: values.wheelMinRadius,
       range: values.wheelRadiusRange,
       factor: 1,
     },
     wheel_density: {
       type: "float",
-      length: values.wheelCount,
+      length: values.wheelMinCount + values.wheelCountRange, //DW wheel stuff
       min: values.wheelMinDensity,
       range: values.wheelDensityRange,
       factor: 1,
@@ -61,7 +69,7 @@ function generateSchema(values){
     wheel_vertex: {
       type: "shuffle",
       length: 8,
-      limit: values.wheelCount,
+      length: values.wheelMinCount + values.wheelCountRange, //DW wheel stuff
       factor: 1,
     },
   };

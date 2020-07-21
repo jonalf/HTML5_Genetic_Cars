@@ -14,7 +14,10 @@ function defToCar(normal_def, world, constants){
   );
   var i;
 
-  var wheelCount = car_def.wheel_radius.length;
+  //gene for wheelCount
+  //var wheelCount = car_def.wheel_radius.length;
+  var wheelCount = car_def.wheel_count;
+  //console.log(wheelCount[0]);
 
   instance.wheels = [];
   for (i = 0; i < wheelCount; i++) {

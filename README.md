@@ -1,5 +1,8 @@
-HTML5 Genetic Cars
-==================
+# HTML5 Genetic Cars
+
+Forked & modified for the following (work in progress):
+  * Number of wheels is now 2-5 based on a new gene
+
 
 A genetic algorithm car evolver in HTML5 canvas.
 

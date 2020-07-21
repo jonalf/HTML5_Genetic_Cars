@@ -1,5 +1,6 @@
 {
-  "wheelCount": 2,
+  "wheelMinCount": 1, //DW
+  "wheelCountRange": 3, //DW
   "wheelMinRadius": 0.2,
   "wheelRadiusRange": 0.5,
   "wheelMinDensity": 40,
@@ -9,3 +10,10 @@
   "chassisMinAxis": 0.1,
   "chassisAxisRange": 1.1
 }
+
+/*
+  what I think i'm doing:
+      adding wheelcount as a gene
+      program will still generate wheels up to wheelCountRange + wheelMinCount
+      but program will only use the wheels up to the gene based number
+*/
