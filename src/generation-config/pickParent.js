@@ -1,4 +1,4 @@
-var nAttributes = 15;
+var nAttributes = 16; //DW: was 15
 module.exports = pickParent;
 
 function pickParent(currentChoices, chooseId, key /* , parents */){

@@ -314,7 +314,7 @@ var uiListeners = {
   }
 }
 
-function simulationStep() {  
+function simulationStep() {
   currentRunner.step();
   showDistance(
     Math.round(leaderPosition.x * 100) / 100,
@@ -324,7 +324,7 @@ function simulationStep() {
 
 function gameLoop() {
   loops = 0;
-  while (!cw_paused && (new Date).getTime() > nextGameTick && loops < maxFrameSkip) {   
+  while (!cw_paused && (new Date).getTime() > nextGameTick && loops < maxFrameSkip) {
     nextGameTick += skipTicks;
     loops++;
   }
@@ -605,7 +605,7 @@ function cw_init() {
   setupCarUI();
   cw_drawMiniMap();
   window.requestAnimationFrame(gameLoop);
-  
+
 }
 
 function relMouseCoords(event) {

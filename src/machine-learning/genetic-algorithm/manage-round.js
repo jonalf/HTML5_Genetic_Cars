@@ -22,14 +22,19 @@ function generationZero(config){
   };
 }
 
+//previousState: full previous generation
+//scores: results? unclear where this is defined. looks like this is a list of all the cars
+//config: generationConfig/index.js returned
 function nextGeneration(
   previousState,
   scores,
   config
 ){
+  //console.log(previousState);
+  console.log(scores);
   var champion_length = config.championLength,
     generationSize = config.generationSize,
-    selectFromAllParents = config.selectFromAllParents;
+    selectFromAllParents = config.selectFromAllParents; //generationConfig/selectFromAllParents?
 
   var newGeneration = new Array();
   var newborn;
