@@ -3,7 +3,7 @@
   "wheelCountRange": 3, //DW
   "wheelMinRadius": 0.2,
   "wheelRadiusRange": 0.5,
-  "wheelMinDensity": 40,
+  "wheelMinDensity": 80,
   "wheelDensityRange": 100,
   "chassisDensityRange": 300,
   "chassisMinDensity": 30,
