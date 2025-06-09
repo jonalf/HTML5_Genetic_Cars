@@ -3,7 +3,7 @@
 Forked & modified for the following (work in progress):
   * Number of wheels is now 2-5 based on a new gene
   * Working on tournament selection instead of roulette wheel
-  * This version is published here: <http://moe.stuy.edu/~dw/boxcardw>
+  * This version is published here: <http://homer.stuy.edu/~dw/boxcar>
 
 
 Original Readme below:
