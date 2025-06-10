@@ -219,7 +219,7 @@ function createWheel(world, radius, density) {
   return body;
 }
 
-},{"../machine-learning/create-instance":20}],4:[function(require,module,exports){
+},{"../machine-learning/create-instance":50}],4:[function(require,module,exports){
 
 
 module.exports = {
@@ -2027,7 +2027,7 @@ function cw_setEliteSize(clones) {
 
 cw_init();
 
-},{"./car-schema/construct.js":2,"./draw/draw-car-stats.js":5,"./draw/draw-car.js":6,"./draw/draw-floor.js":8,"./draw/plot-graphs.js":10,"./generation-config":14,"./ghost/index.js":18,"./machine-learning/genetic-algorithm/manage-round.js":21,"./world/run.js":23}],20:[function(require,module,exports){
+},{"./car-schema/construct.js":2,"./draw/draw-car-stats.js":5,"./draw/draw-car.js":6,"./draw/draw-floor.js":8,"./draw/plot-graphs.js":10,"./generation-config":14,"./ghost/index.js":18,"./machine-learning/genetic-algorithm/manage-round.js":21,"./world/run.js":23}],50:[function(require,module,exports){ //20 before :[function
 var random = require("./random.js");
 
 module.exports = {
@@ -2190,7 +2190,7 @@ function mutate(config, parent){
   )
 }
 
-},{"../create-instance":20}],22:[function(require,module,exports){
+},{"../create-instance":50}],22:[function(require,module,exports){
 
 
 const random = {
