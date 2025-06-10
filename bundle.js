@@ -4,7 +4,7 @@ module.exports={
   "wheelCountRange": 3, //DW
   "wheelMinRadius": 0.2,
   "wheelRadiusRange": 0.5,
-  "wheelMinDensity": 40,
+  "wheelMinDensity": 80,
   "wheelDensityRange": 100,
   "chassisDensityRange": 300,
   "chassisMinDensity": 30,
@@ -937,7 +937,7 @@ var schema = carConstruct.generateSchema(carConstants);
 var pickParent = require("./pickParent");
 var selectFromAllParents = require("./selectFromAllParents");
 const constants = {
-  generationSize: 20,
+  generationSize: 50,
   schema: schema,
   championLength: 1,
   mutation_range: 1,
@@ -1069,29 +1069,7 @@ function selectFromAllParentsOLD(parents, parentList, previousParentIndex) {
 //DW tournament selection
 function selectFromAllParents(parents, parentList, previousParentIndex) {
   var previousParent = parents[previousParentIndex];
-  // var validParents = parents.filter(function(parent, i){
-  //   if(previousParentIndex === i){
-  //     return false;
-  //   }
-  //   if(!previousParent){
-  //     return true;
-  //   }
-  //   var child = {
-  //     id: Math.random().toString(32),
-  //     ancestry: [previousParent, parent].map(function(p){
-  //       return {
-  //         id: p.def.id,
-  //         ancestry: p.def.ancestry
-  //       }
-  //     })
-  //   }
-  //   var iCo = getInbreedingCoefficient(child);
-  //   console.log("inbreeding coefficient", iCo)
-  //   if(iCo > 0.25){
-  //     return false;
-  //   }
-  //   return true;
-  // })
+
   var validParents = parents;
   console.log("VALID PARENTS:");
   console.log(validParents);
