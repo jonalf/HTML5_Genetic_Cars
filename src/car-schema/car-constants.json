@@ -1,6 +1,6 @@
 {
   "wheelMinCount": 1, //DW
-  "wheelCountRange": 3, //DW
+  "wheelCountRange": 5, //DW
   "wheelMinRadius": 0.2,
   "wheelRadiusRange": 0.5,
   "wheelMinDensity": 80,
