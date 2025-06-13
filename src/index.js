@@ -579,6 +579,7 @@ function cw_init() {
   // clone silver dot and health bar
   var mmm = document.getElementsByName('minimapmarker')[0];
   var hbar = document.getElementsByName('healthbar')[0];
+  console.log("NEW START: " + generationConfig.constants.generationSize);
   var generationSize = generationConfig.constants.generationSize;
 
   for (var k = 0; k < generationSize; k++) {
